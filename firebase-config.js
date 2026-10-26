@@ -1,11 +1,9 @@
-// Colle ici la configuration de ton application web Firebase (voir README, section « Sauvegarde cloud »).
-// Tant que c'est null, l'application fonctionne uniquement en local.
-window.FIREBASE_CONFIG = null;
-/* Exemple :
+// Configuration Firebase du projet « mypneus ».
 window.FIREBASE_CONFIG = {
-  apiKey: "AIza...",
-  authDomain: "ton-projet.firebaseapp.com",
-  projectId: "ton-projet",
-  appId: "1:123456789:web:abcdef"
+  apiKey: "AIzaSyBZ-WAsLsUVB3z4mapEtJ7lyEtRP-hTZ1M",
+  authDomain: "mypneus.firebaseapp.com",
+  projectId: "mypneus",
+  storageBucket: "mypneus.firebasestorage.app",
+  messagingSenderId: "626404123831",
+  appId: "1:626404123831:web:a933d937d2d1101aad5932"
 };
-*/
