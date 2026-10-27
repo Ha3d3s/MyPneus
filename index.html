@@ -243,8 +243,8 @@ function mount3D(el,c,season){
     if(V!==me)return;
     const car=m.clone(true);
     car.traverse(o=>{if(o.isMesh&&o.material){const mt=o.material=o.material.clone();mt.flatShading=false;mt.needsUpdate=true;mt.envMapIntensity=1;
-      if(mt.name==='paint'){const pt=o.material=new THREE.MeshPhysicalMaterial({color:c.color,metalness:.35,roughness:.3,clearcoat:1,clearcoatRoughness:.04,envMapIntensity:1});pt.name='paint'}
-      else if(mt.name==='glass'){mt.color.set(0x0b1218);mt.transparent=true;mt.opacity=.55;mt.roughness=.05;mt.metalness=.8;mt.depthWrite=false}}});
+      if(mt.name==='paint'){const pt=o.material=new THREE.MeshPhysicalMaterial({color:c.color,metalness:.1,roughness:.5,clearcoat:.5,clearcoatRoughness:.15,envMapIntensity:.3});pt.name='paint'}
+      else if(mt.name==='glass'){mt.color.set(0x0a0f14);mt.transparent=false;mt.opacity=1;mt.depthWrite=true;mt.roughness=.15;mt.metalness=.4;mt.envMapIntensity=.9}}});
     car.updateMatrixWorld(true);
     const b=new THREE.Box3().setFromObject(car),sz=b.getSize(new THREE.Vector3()),ct=b.getCenter(new THREE.Vector3());
     M.w.forEach(([ax,x,z])=>{
